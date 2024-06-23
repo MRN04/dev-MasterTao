@@ -1,8 +1,16 @@
 header{
-	height: 7vh;
-	padding: 15px 0;
-	background: #222;
-	a {
-		color: #fff;
+	max-width: 1140px;
+	display: flex;
+	justify-content: space-between;
+	padding: 25px 0;
+	margin: 0 auto;
+	nav {
+		display: flex;
+		gap: 45px;
+		align-items: center;
+	}
+	.btn {
+		max-width: 171px;
+		width: 100%;
 	}
 }

@@ -1,0 +1,141 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Proxima Nova';
+    line-height: normal;
+    color: $font-color;
+}
+
+body {
+    background-color: #282B38;
+}
+
+a {
+    text-decoration: none;
+    
+}
+
+ol {
+    padding-left: 20px; 
+    li::marker {
+        color: $icons-color;
+        font-size: 22px;
+        font-weight: 700;
+        font-family: 'Proxima Nova';
+    }
+    li {
+        padding-left: 5px;
+    }
+}
+
+ul {
+    padding-left: 15px;
+    li::marker {
+        color: $icons-color;
+        font-size: 20px;
+    }
+}
+
+h1 {
+    font-size: 56px;
+    font-weight: 700;
+    line-height: 70.56px;
+}
+
+h2 {
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 44.82px;
+}
+
+h3 {
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 30.24px;
+}
+
+h4 {
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 27.39px;
+}
+
+h5 {
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 29.2px;
+}
+
+.checkbox-row {
+    margin-bottom: 10px;
+}
+
+input[type="checkbox"], input[type="radio"] {
+    display: none;
+}
+
+input[type="checkbox"] + label{
+    position: relative;
+    padding-left: 30px;
+    padding-bottom: 10px;
+
+    &::before {
+        content: "";
+        display: inline-block;
+        width: 24px;
+        height: 24px;
+        border: none;
+        border-radius: 5px;
+        background-color: $font-color;
+        position: absolute;
+        top: -3px;
+        left: 0;
+    }
+}
+
+input[type="checkbox"]:checked + label {
+    &::before {
+        content: "";
+        background: url("../assets/img/cloud-arrow-down-svgrepo-com.svg") center/contain no-repeat;
+    }
+}
+
+input[type="radio"] + label {
+    position: relative;
+    padding-left: 26px;
+
+    &::before {
+        content: "";
+        display: inline-block;
+        width: 20px;
+        height: 20px;
+        border: none;
+        border-radius: 50%;
+        background-color: #ffffff;
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+
+}
+
+
+.btn {
+    padding: 14px 27px;
+    border: none;
+    border-radius: 90px;
+    background-color: #E58D35;
+    font-size: 15px;
+    line-height: 21.9px;
+    font-weight: 600;
+}
+
+.btn-transparent {
+    padding: 14px 24px;
+    border: 1px solid #E58D35;
+    border-radius: 90px;
+    background-color: transparent;
+    font-size: 15px;
+}
