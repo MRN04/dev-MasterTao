@@ -1,16 +1,25 @@
 header{
-	max-width: 1140px;
+	max-width: 1170px;
 	display: flex;
 	justify-content: space-between;
-	padding: 25px 0;
+	align-items: center;
+	padding: 25px 15px;
 	margin: 0 auto;
 	nav {
 		display: flex;
 		gap: 45px;
-		align-items: center;
+		
 	}
 	.btn {
 		max-width: 171px;
 		width: 100%;
 	}
+}
+
+.burger {
+	display: none;
+    width: 40px;
+    height: 40px;
+    background: url("assets/img/cil_hamburger-menu.svg") center/contain no-repeat;
+    border: none;
 }

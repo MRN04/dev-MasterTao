@@ -1,4 +1,16 @@
 @media screen and (max-width: 1024px) {
+    .burger {
+        display: inline-block;
+    }
+
+    header {
+        nav {
+            display: none;
+        }
+        .btn {
+            display: none;
+        }
+    }
 }
 
 

@@ -68,10 +68,6 @@ h5 {
     line-height: 29.2px;
 }
 
-.checkbox-row {
-    margin-bottom: 10px;
-}
-
 input[type="checkbox"], input[type="radio"] {
     display: none;
 }
@@ -97,8 +93,8 @@ input[type="checkbox"] + label{
 
 input[type="checkbox"]:checked + label {
     &::before {
-        content: "";
-        background: url("../assets/img/cloud-arrow-down-svgrepo-com.svg") center/contain no-repeat;
+        background: $font-color url("assets/img/checkmark.svg") center/contain no-repeat;
+        background-size: 15px;
     }
 }
 
@@ -119,6 +115,11 @@ input[type="radio"] + label {
         left: 0;
     }
 
+}
+
+input[type="radio"]:checked + label::before {
+    background: $font-color url("assets/img/circle-black-geometric-shape-svgrepo-com.svg") center/contain no-repeat;
+    background-size: 8px;
 }
 
 
