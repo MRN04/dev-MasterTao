@@ -1,11 +1,11 @@
-const burger = document.querySelector(".burger")
+const burger = document.querySelector(".hamburger")
 const BurgerMenu = document.querySelector(".burger-menu")
 const header = document.querySelector("header")
 
 function ShowBurgerMenu() {
     BurgerMenu.classList.toggle("show")
-    burger.classList.toggle("cross")
-
+    document.querySelector("body").classList.toggle("overflow-hidden")
+    burger.classList.toggle("is-active")
 }
 function removeClass() {
     BurgerMenu.classList.remove("show")

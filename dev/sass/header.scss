@@ -17,31 +17,37 @@ header{
 		width: 100%;
 	}
 
-	.burger {
+	.hamburger {
 		display: none;
-		width: 40px;
+		padding: 0 5px;
 		height: 40px;
-		background: url("assets/img/cil_hamburger-menu.svg") center/contain no-repeat;
-		border: none;
+
+		.hamburger-box {
+			
+			width: 30px;
+
+			.hamburger-inner, .hamburger-inner::before, .hamburger-inner::after {
+				width: 30px;
+				height: 3px;
+				background-color: #FFFFFF;
+			}
+		}
 	}
 
-	.cross {
-		background: url("assets/img/cross.svg") center/contain no-repeat;
-		background-size: 30px;
-	}
+
 	
 	.burger-menu {
 		display: flex;
 		width: 100%;
 		height: 508px;
 		padding: 0 15px;
-		position: fixed;
+		position: absolute;
 		top: 100px;
-		right: -100%;
+		left: -100%;
 		background-color: $secondary-bg-color;
 		flex-direction: column;
 		align-items: center;
-		transition: .4s;
+		transition: .3s;
 	
 		.mobile-nav {
 			display: flex;
@@ -61,8 +67,7 @@ header{
 	}
 
 	.show {
-		right: 0;
-		transition: .6s;
+		left: 0;
 	}
 
 	
