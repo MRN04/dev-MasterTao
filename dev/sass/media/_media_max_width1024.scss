@@ -1,14 +1,13 @@
 @media screen and (max-width: 1024px) {
-    .burger {
-        display: inline-block;
-    }
-
     header {
-        nav {
+        .desktop-nav {
             display: none;
         }
-        .btn {
+        .btn.desktop {
             display: none;
+        }
+        .burger {
+            display: inline-block;
         }
     }
 }
