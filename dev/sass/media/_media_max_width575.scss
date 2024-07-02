@@ -8,7 +8,53 @@
         }
 
         .burger-menu {
-            top: 74px;
+            top: 73px;
         }
+    }
+
+    .first-screen {
+        .swiper {
+            height: calc(100vh - 74px);
+            border-radius: 0;
+            
+            .swiper-slide {
+                border-radius: 0;
+
+                .wraper {
+                    padding-left: 20px;
+                    padding-right: 20px;
+                    
+
+                    h1 {
+                        font-size: 32px;
+                        line-height: 40.32px;
+                        margin-bottom: 10px;
+                        max-width: 335px;
+                        
+                    }
+                    p {
+                        font-size: 16px;
+                        line-height: 21.68px;
+                        margin-bottom: 18px;
+                    }
+                    .btn-arrow {
+                        max-width: 295px;
+                        font-size: 16px;
+                        gap: 52px;
+                    }
+                }
+
+
+
+                .swiper-button-prev, .swiper-button-next {
+                    display: none;
+                }
+            }
+        }
+    }
+
+    .container-fluid {
+        margin: 0;
+        border-radius: 0;
     }
 }

@@ -122,6 +122,17 @@ input[type="radio"]:checked + label::before {
     background-size: 8px;
 }
 
+.container {
+    padding: 0 12px;
+    margin: 0 auto;
+}
+
+.container-fluid {
+    margin: 0 50px;
+    background-color: $secondary-bg-color;
+    border: none;
+    border-radius: 20px;
+}
 
 .btn {
     padding: 14px 27px;
@@ -141,6 +152,27 @@ input[type="radio"]:checked + label::before {
     font-size: 15px;
 }
 
+.btn-arrow {
+    padding: 23px 0 23px 33px;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 23.36px;
+    border: none;
+    border-radius: 90px;
+    background-color: #E58D35;
+    width: 100%;
+    max-width: 293px;
+    display: flex;
+    gap: 49px;
+    
+    .arrow {
+        width: 27px;
+        height: 27px;
+        background: url("assets/img/arrow-circle-left.svg");
+    }
+}
+
 .overflow-hidden {
     overflow: hidden;
 }
+
