@@ -1,0 +1,79 @@
+.calculate {
+    margin-top: 98px;
+
+    .calculation-form {
+        max-width: 626px;
+        width: 100%;
+        padding: 50px;
+        padding-bottom: 61px;
+        background-color: $secondary-bg-color;
+        border: none;
+        border-radius: 20px;
+        margin: 0 auto;
+
+        label {
+            font-size: 15px;
+        }
+
+        .form-row {
+            display: flex;
+            gap: 30px;
+            &:first-child {
+                margin-bottom: 20px;
+            }
+            &:nth-child(2) {
+                align-items: flex-end;
+            }
+            &:nth-child(3) {
+                margin-top: 34px;
+                display: inline-block;
+                width: 100%;
+                margin-bottom: 36px;
+            }
+
+            .form-col {
+                display: flex;
+                flex-direction: column;
+                gap: 20px;
+                
+                .inputs-container {
+                    max-width: 248px;
+                    width: 100%;
+                    input {
+                        margin-top: 5px;
+                    }
+
+                    .checkboxes {
+                        
+                        width: 248px;
+                        &:first-child {
+                            padding-bottom: 6px;
+                            padding-top: 5px;
+                        }
+                        &:last-child {
+                            padding-top: 11px;
+                        }
+                    }
+
+                    &.type-file {
+                        display: flex;
+                        flex-direction: column;
+                        gap: 12px;
+                        width: 100%;
+                        max-width: inherit;
+                    }
+                    input[type="file"] {
+                        display: none;
+                    }
+                    input[type="file"] + label {
+                        width: 100%;
+                        padding: 16px;
+                        border: 1px dashed #FFFFFF42;
+                        border-radius: 10px;
+                        text-align: center;
+                    }
+                }
+            }
+        }
+    }
+}

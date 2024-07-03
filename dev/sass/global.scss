@@ -68,6 +68,18 @@ h5 {
     line-height: 29.2px;
 }
 
+input {
+    width: 100%;
+    padding: 19px 0 18px 20px;
+    color: #CBCBCB;
+    background-color: #ffffff;
+    border: none;
+    border-radius: 10px;
+    font-size: 15px;
+    line-height: 18.9px;
+    font-weight: 400;
+}
+
 input[type="checkbox"], input[type="radio"] {
     display: none;
 }
@@ -176,3 +188,45 @@ input[type="radio"]:checked + label::before {
     overflow: hidden;
 }
 
+.template-title {
+    margin: 0 auto;
+    text-align: center;
+    max-width: 1140px;
+    width: 100%;
+    text-transform: uppercase;
+
+    &::after {
+        content: "";
+        display: inline-block;
+        width: 85px;
+        height: 2px;
+        background: $button-color;
+        margin-top: 15px;
+    }
+}
+
+.bt-green {
+    &::after {
+        background: $icons-color;
+    }
+}
+
+.title-align-left {
+    text-align: left;
+}
+
+.title-element-in-text {
+    text-align: left;
+
+    h2::after {
+        content: "";
+        display: inline-block;
+        width: 85px;
+        height: 2px;
+        background: $icons-color;
+        margin: 10px 20px;
+    }
+    &::after {
+        display: none;
+    }
+}
