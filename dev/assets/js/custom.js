@@ -31,3 +31,22 @@ const swiper = new Swiper('.swiper', {
       prevEl: '.swiper-button-prev',
     },
   })
+
+const fileInput = document.querySelectorAll("#fileInput")
+
+fileInput.forEach(item => {
+  item.addEventListener("change", function() {
+    const fileName = item.closest(".type-file").querySelector("#fileName")
+    fileName.innerHTML = item.files[0].name
+  })
+});  
+
+const titles = document.querySelectorAll(".template-title")
+const w = window.innerWidth;
+
+if (w<=1024) {
+  titles.forEach(item => {
+    item.classList.remove("title-element-in-text")
+    item.classList.remove("title-align-left")
+  });
+}

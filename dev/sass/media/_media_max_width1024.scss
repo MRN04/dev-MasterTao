@@ -60,6 +60,49 @@
     .container-fluid {
         margin: 0;
     }
+
+
+    .calculate {
+        .container {
+            height: inherit;
+        }
+        .background-man {
+            display: none;
+        }
+        .template-title {
+            margin-bottom: 54px;
+            h2 {
+                font-size: 24px;
+                line-height: 29.88px;
+            }
+        }
+        .calculation-form {
+            margin: 0 auto;
+            padding: 52px 30px 34px 30px;
+            .form-row {
+                flex-direction: column;
+                gap: 20px;
+                &:nth-child(2) {
+                    align-items: inherit;
+                }
+                &:nth-child(3) {
+                    margin-top: 20px;
+                    margin-bottom: 26px;
+                }
+                .form-col {
+                    .inputs-container {
+                        max-width: inherit;
+                    }
+                }
+            }
+
+            .btn-arrow {
+                max-width: inherit;
+            }
+        }
+    }
+
+    
 }
 
 

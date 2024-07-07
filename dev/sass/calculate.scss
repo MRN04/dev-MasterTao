@@ -1,6 +1,21 @@
 .calculate {
     margin-top: 98px;
 
+    .container {
+        width: 100%;
+        max-width: 1158px;
+        height: 888px;
+        position: relative;
+    }
+
+    .template-title {
+        margin-bottom: 58px;
+        padding-top: 30px;
+        &::after {
+            background-color: $icons-color;
+        }
+    }
+
     .calculation-form {
         max-width: 626px;
         width: 100%;
@@ -9,7 +24,6 @@
         background-color: $secondary-bg-color;
         border: none;
         border-radius: 20px;
-        margin: 0 auto;
 
         label {
             font-size: 15px;
@@ -26,9 +40,9 @@
             }
             &:nth-child(3) {
                 margin-top: 34px;
-                display: inline-block;
                 width: 100%;
                 margin-bottom: 36px;
+                display: inline-block;
             }
 
             .form-col {
@@ -75,5 +89,14 @@
                 }
             }
         }
+    }
+
+    .background-man {
+        position: absolute;
+        bottom: 0px;
+        left: 610px;    
+        max-width: 560px;
+        width: 30vw;
+        min-width: 400px;
     }
 }
