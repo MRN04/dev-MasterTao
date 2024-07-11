@@ -1,0 +1,44 @@
+.advantages {
+    .template-title {
+        padding-top: 89px;
+        padding-bottom: 72px;
+    }
+
+    .swiper-advantages {
+        padding-bottom: 92px;
+
+        .swiper-slide {
+            display: flex;
+            justify-content: center;
+            width: 100%;
+            
+            .advantage {
+                width: 100%;
+                max-width: 263px;
+                text-align: center;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+
+                .advantage-image {
+                    width: 113px;
+                    height: 113px;
+                    border: 1px solid #6C7188;
+                    border-radius: 50%;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    margin: 0 auto;
+
+                    img {
+                        width: 93px;
+                        height: 93px;
+                        background-color: $icons-color;
+                        border-radius: 50%;
+                        object-fit: scale-down;
+                    }
+                }
+            }
+        }
+    }
+}

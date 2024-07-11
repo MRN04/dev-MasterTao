@@ -1,3 +1,17 @@
 @media (min-width: 1025px) {
+    .advantages {
+        .swiper-wrapper {
+            width: calc(100% - 35.312vw);
+            flex-wrap: wrap;
+            row-gap: 26px;
+            column-gap: 30px;
+            padding: 0 17.656vw;
+            justify-content: center;
 
+            .swiper-slide {
+                width: calc(25% - 30px) !important;
+                min-width: 150px;
+            }
+        }
+    }
 }

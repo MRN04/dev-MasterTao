@@ -59,6 +59,18 @@
 
     .container-fluid {
         margin: 0;
+        border-radius: 0;
+    }
+
+    .container {
+        padding: 0 20px;
+    }
+
+    .template-title {
+        h2 {
+            font-size: 24px;
+            line-height: 29.88px;
+        }
     }
 
 
@@ -102,7 +114,22 @@
         }
     }
 
-    
+    .advantages {
+        margin-top: 60px;
+
+        .template-title {
+            padding-top: 55px;
+            padding-bottom: 45px;
+            max-width: 335px;
+        }
+        .swiper-advantages { 
+            padding-bottom: 116px;
+
+            .swiper-pagination {
+                bottom: 60px;
+            }
+        }
+    }
 }
 
 

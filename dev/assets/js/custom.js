@@ -14,18 +14,15 @@ function removeClass() {
 burger.addEventListener("click", ShowBurgerMenu)
 /*header.addEventListener("click", removeClass)*/
 
-const swiper = new Swiper('.swiper', {
+const swiperFirstScreen = new Swiper('.swiper.swiper-first-screen', {
     speed: 500,
     spaceBetween: 30,
     loop: true,
-  
-    // If we need pagination
     pagination: {
       el: '.swiper-pagination',
       clickable: true,
     },
-  
-    // Navigation arrows
+
     navigation: {
       nextEl: '.swiper-button-next',
       prevEl: '.swiper-button-prev',
@@ -50,3 +47,29 @@ if (w<=1024) {
     item.classList.remove("title-align-left")
   });
 }
+
+const advantagesSlideLength = document.querySelectorAll('.advantages .swiper-slide').length
+
+const swiperAdvantages = new Swiper('.swiper.swiper-advantages', {
+  spaceBetween: 12,
+  loop: true,
+  simulateTouch: true,
+  slidesPerView: 1,
+  pagination: {
+      el: '.swiper-pagination',
+      clickable: true,
+      enabled: true,
+  },
+  breakpoints: {
+      1025: {
+          spaceBetween: 0,
+          loop: false,
+          slidesPerView: advantagesSlideLength,
+          simulateTouch: false,
+          pagination: {
+              enabled: false,
+              el: '.swiper-pagination',
+          }
+      }
+  }
+});
