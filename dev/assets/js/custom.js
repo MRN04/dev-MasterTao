@@ -73,3 +73,44 @@ const swiperAdvantages = new Swiper('.swiper.swiper-advantages', {
       }
   }
 });
+
+const swiperDelivery = new Swiper('.delivery .swiper', {
+  spaceBetween: 30,
+  loop: true,
+  slidesPerView: 1,
+  slidesPerGroup: 1,
+  pagination: {
+      el: '.swiper-pagination',
+      clickable: true,
+      enabled: true,
+  },
+    navigation: {
+      enabled: false,
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+  },
+  breakpoints: {
+    1300: {
+      slidesPerView: 3,
+      slidesPerGroup: 1,
+      pagination: {
+        enabled: false,
+      },
+      navigation: {
+        enabled: true,
+      },
+    },
+    1025: {
+      slidesPerView: 2,
+      spaceBetween: 30,
+      pagination: {
+          enabled: false,
+      },
+      navigation: {
+        enabled: true,
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+    }
+  }
+});

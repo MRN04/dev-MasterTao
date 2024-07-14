@@ -53,17 +53,6 @@
 
         }
 
-        .swiper-button-prev, .swiper-button-next {
-            color: #fff;
-            transition: .3s;
-            padding: 0 40px;
-            &:hover {
-                color: $icons-color;
-            }
-        }
-
-
-
         .wrap {
             position: absolute;
             top: 50%;

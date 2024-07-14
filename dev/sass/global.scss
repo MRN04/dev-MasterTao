@@ -141,7 +141,7 @@ input[type="radio"]:checked + label::before {
 }
 
 .container {
-    padding: 0 50px;
+    padding: 0 20px;
     margin: 0 auto;
 }
 
@@ -255,4 +255,13 @@ input[type="radio"]:checked + label::before {
 }
 .swiper-pagination-bullet-active {
     background-color: #fff;
+}
+
+.swiper-button-prev, .swiper-button-next {
+    color: #fff;
+    transition: .3s;
+    padding: 0 40px;
+    &:hover {
+        color: $icons-color;
+    }
 }

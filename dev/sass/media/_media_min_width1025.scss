@@ -14,4 +14,30 @@
             }
         }
     }
+
+    .delivery {
+        .swiper {
+            max-width: 932px;
+            padding-left: 91px;
+            padding-right: 91px;
+            position: relative;
+
+            &::before,
+            &::after {
+                content: "";
+                position: absolute;
+                width: 96px;
+                height: 100%;
+                background-color: $primary-bg-color;
+                left: -20px;
+                top: 0;
+                z-index: 2;
+            }
+            &::after {
+                left: inherit;
+                right: -20px;
+                z-index: 2;
+            }
+        }
+    }
 }

@@ -67,6 +67,7 @@
     }
 
     .template-title {
+        max-width: 335px;
         h2 {
             font-size: 24px;
             line-height: 29.88px;
@@ -120,14 +121,35 @@
         .template-title {
             padding-top: 55px;
             padding-bottom: 45px;
-            max-width: 335px;
         }
         .swiper-advantages { 
-            padding-bottom: 116px;
+            padding-bottom: 100px;
 
             .swiper-pagination {
                 bottom: 60px;
             }
+        }
+
+    }
+
+    .delivery {
+        .template-title {
+            margin-bottom: 32px;
+        }
+        .card {
+            max-width: 335px;
+            
+            img {
+                max-width: 335px !important;
+            }
+            
+            .btn-row {
+                gap: 12px !important;
+
+                a {
+                    padding: 14px 10px !important;
+                }
+            } 
         }
     }
 }
