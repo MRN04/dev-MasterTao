@@ -26,10 +26,13 @@
                     .card-img{ 
                         img {
                             max-width: 360px;
+                            height: 229px;
                             margin: -27px -20px;
                             margin-bottom: 27px;
                             border-top-left-radius: 20px;
                             border-top-right-radius: 20px;
+                            object-fit: cover;
+                            object-position: center;
                         }
                     }
                     h4 {

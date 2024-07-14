@@ -6,6 +6,12 @@ header{
 	padding: 25px 15px;
 	margin: 0 auto;
 	
+	.logo {
+		max-width: 172px;
+		max-height: 48px;
+		object-fit: cover;
+	}
+
 	.desktop-nav {
 		display: flex;
 		gap: 45px;
