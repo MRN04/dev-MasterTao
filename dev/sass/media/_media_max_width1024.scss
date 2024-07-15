@@ -11,48 +11,50 @@
         }
     }
 
-    .first-screen {
-        .swiper {
-            border-radius: 0;
-            height: calc(100vh - 99px);
-            .swiper-slide {
+    .content-section {
+        .first-screen {
+            .swiper {
                 border-radius: 0;
+                height: calc(100vh - 109px);
+                .swiper-slide {
+                    border-radius: 0;
 
-                &::before {
-                    content: "";
-                    position: absolute;
-                    top: 0;
-                    bottom: 0;
-                    right: 0;
-                    left: 0;
-                    background-color: #04051199;
-                    z-index: -1;
+                    &::before {
+                        content: "";
+                        position: absolute;
+                        top: 0;
+                        bottom: 0;
+                        right: 0;
+                        left: 0;
+                        background-color: #04051199;
+                        z-index: -1;
+                    }
                 }
-            }
 
-            .wraper {
-                padding-left: 75px;
-                padding-right: 75px;
-                text-align: center;
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-                
-                h1 {
-                    font-size: 50px;
-                    max-width: 400px;
+                .wraper {
+                    padding-left: 75px;
+                    padding-right: 75px;
+                    text-align: center;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+
+                    h1 {
+                        font-size: 50px;
+                        max-width: 400px;
+                    }
+                    p {
+                        font-size: 18px;
+                    }
+                    .btn-arrow {
+                        max-width: 295px;
+                        font-size: 16px;
+                        gap: 52px;
+                    }
                 }
-                p {
-                    font-size: 18px;
+                .swiper-button-prev, .swiper-button-next {
+                    display: none;
                 }
-                .btn-arrow {
-                    max-width: 295px;
-                    font-size: 16px;
-                    gap: 52px;
-                }
-            }
-            .swiper-button-prev, .swiper-button-next {
-                display: none;
             }
         }
     }
@@ -135,7 +137,7 @@
 
     .delivery {
         margin-top: 54px;
-        .template-title {
+        .container .template-title {
             margin-bottom: 32px;
             max-width: 335px;
         }

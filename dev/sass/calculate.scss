@@ -13,6 +13,9 @@
         &::after {
             background-color: $icons-color;
         }
+        h2 {
+            max-width: 620px;
+        }
     }
 
     .calculation-form {
