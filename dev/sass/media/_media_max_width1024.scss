@@ -67,7 +67,7 @@
     }
 
     .template-title {
-        max-width: 335px;
+        max-width: 500px;
         h2 {
             font-size: 24px;
             line-height: 29.88px;
@@ -76,6 +76,7 @@
 
 
     .calculate {
+        margin-top: 55px;
         .container {
             height: inherit;
         }
@@ -133,8 +134,10 @@
     }
 
     .delivery {
+        margin-top: 54px;
         .template-title {
             margin-bottom: 32px;
+            max-width: 335px;
         }
         .card {
             max-width: 335px;
