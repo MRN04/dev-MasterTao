@@ -170,6 +170,32 @@
             }
         }
     }
+
+    .about {
+        margin-top: 54px;
+        .container {
+            flex-direction: column;
+            gap: 25px;
+            align-items: center;
+
+            .block-text {
+                .template-title {
+                    margin-top: 0;
+                    margin-bottom: 25px;
+                }
+                p {
+                    font-size: 16px;
+                    line-height: 23.92px;
+                    margin-bottom: 15px;
+                }
+            }
+            img {
+                width: 100%;
+                max-width: 450px;
+                padding: 5px;
+            }
+        }
+    }
 }
 
 
