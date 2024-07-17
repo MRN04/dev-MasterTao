@@ -1,4 +1,8 @@
 @media (min-width: 1025px) {
+    main {
+        padding: 0 50px;
+    }
+
     .advantages {
         .swiper-wrapper {
             width: calc(100% - 33vw);
@@ -15,7 +19,7 @@
         }
     }
 
-    .delivery {
+    .delivery, .services {
         .swiper {
             max-width: 932px;
             padding-left: 91px;
@@ -39,5 +43,9 @@
                 z-index: 2;
             }
         }
+    }
+    .services .swiper::before,
+    .services .swiper::after {
+        background-color: $secondary-bg-color;
     }
 }

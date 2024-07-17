@@ -74,7 +74,7 @@ const swiperAdvantages = new Swiper('.swiper.swiper-advantages', {
   }
 });
 
-const swiperDelivery = new Swiper('.delivery .swiper', {
+const swiperTemplate = new Swiper('.delivery-swiper, .services-swiper', {
   spaceBetween: 30,
   loop: true,
   slidesPerView: 1,
@@ -90,7 +90,7 @@ const swiperDelivery = new Swiper('.delivery .swiper', {
       prevEl: '.swiper-button-prev',
   },
   breakpoints: {
-    1300: {
+    1400: {
       slidesPerView: 3,
       slidesPerGroup: 1,
       pagination: {

@@ -10,88 +10,156 @@
                 background-color: $icons-color;
             }
         }
+    }
+}
 
-        .swiper {
-            .swiper-slide {
-                display: flex;
-                justify-content: center;
-                .card {
-                    width: 360px;
-                    padding: 27px 20px;
-                    
-                    background-color: $secondary-bg-color;
-                    border-radius: 20px;
-                    text-align: center;
+.swiper {
+    .swiper-slide {
+        display: flex;
+        justify-content: center;
+        .card {
+            width: 360px;
+            height: 482px;
+            padding: 27px 20px;
+            
+            background-color: $secondary-bg-color;
+            border-radius: 20px;
+            text-align: center;
 
-                    .card-img{ 
-                        img {
-                            max-width: 360px;
-                            height: 229px;
-                            margin: -27px -20px;
-                            margin-bottom: 27px;
-                            border-top-left-radius: 20px;
-                            border-top-right-radius: 20px;
-                            object-fit: cover;
-                            object-position: center;
-                        }
-                    }
-                    h4 {
-                        margin-bottom: 13px;
-                    }
-                    .card-info {
-                        display: flex;
-                        gap: 28px;
-                        justify-content: center;
-                        margin-bottom: 13px;
-                        font-size: 16px;
-                        line-height: 19.92px;
-
-                        span {
-                            display: flex;
-                            align-items: center;
-                            gap: 10px;
-                        }
-                    }
-                    .price {
-                        margin-bottom: 18px;
-
-                        span {
-                            font-size: 22px;
-                            line-height: 125%;
-                            color: #a3a3a3;
-
-                            &:last-child {
-                                color: #fff;
-                            }
-                        }
-                        b {
-                            font-size: 45px;
-
-                        }
-                    }
-                    .btn-row {
-                        height: 50px;
-                        display: flex;
-                        justify-content: center;
-                        gap: 14px;
-                        a {
-                            width: 153px;
-                            padding: 14px 18px;
-                        }
-                    }
+            .card-img{ 
+                img {
+                    max-width: 360px;
+                    height: 229px;
+                    margin: -27px -20px;
+                    margin-bottom: 27px;
+                    border-top-left-radius: 20px;
+                    border-top-right-radius: 20px;
+                    object-fit: cover;
+                    object-position: center;
                 }
             }
+            h4 {
+                margin-bottom: 13px;
+            }
+            .card-info {
+                display: flex;
+                gap: 28px;
+                justify-content: center;
+                margin-bottom: 13px;
+                font-size: 16px;
+                line-height: 19.92px;
 
-            .swiper-button-prev {
-                left: -28px;
+                span {
+                    display: flex;
+                    align-items: center;
+                    gap: 10px;
+                }
             }
-            .swiper-button-next {
-                right: -28px;
+            .price {
+                margin-bottom: 18px;
+
+                span {
+                    font-size: 22px;
+                    line-height: 125%;
+                    color: #a3a3a3;
+
+                    &:last-child {
+                        color: #fff;
+                    }
+                }
+                b {
+                    font-size: 45px;
+
+                }
             }
-            .swiper-pagination {
-                position: static;
-                margin-top: 32px;
+            .btn-row {
+                height: 50px;
+                display: flex;
+                justify-content: center;
+                gap: 14px;
+                a {
+                    width: 153px;
+                    padding: 14px 18px;
+                }
             }
         }
     }
+
+    .swiper-button-prev {
+        left: -28px;
+    }
+    .swiper-button-next {
+        right: -28px;
+    }
+    .swiper-pagination {
+        position: static;
+        margin-top: 32px;
+    }
+}
+
+.services {
+    margin-top: 100px;
+    .container-fluid {
+        padding-top: 90px;
+        padding-bottom: 100px;
+
+        .template-title {
+            margin-bottom: 56px;
+        }
+
+        .card {
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            gap: 14px;
+            text-align: start;
+            padding: 33px 30px;
+            position: relative;
+            .btn-row {
+                justify-content: flex-start;
+                a {
+                    padding: 14px 24px;
+                    text-align: center;
+                }
+            }
+            h4 {
+                margin-bottom: 0;
+            }
+            p {
+                font-size: 15px;
+                line-height: 18.68px;
+                font-weight: 300;
+            }
+            &::after {
+                content: "";
+                position: absolute;
+                top: 0;
+                bottom: 0;
+                right: 0;
+                left: 0;
+                background: linear-gradient(0deg, rgba(4, 5, 17, 0.91) 0%, rgba(88, 88, 88, 0) 100%);
+                border-radius: 20px;
+                z-index: 1;
+            }
+            h4, p, .btn-row {
+                z-index: 2;
+            }
+        }
+
+        .swiper-slide {
+            &:nth-child(1) .card {
+                background: url("assets/img/services-img-1.svg");
+            }
+            &:nth-child(2) .card {
+                background: url("assets/img/services-img-2.svg");
+            }
+            &:nth-child(3) .card {
+                background: url("assets/img/services-img-3.svg");
+            }
+            &:nth-child(4) .card {
+                background: url("assets/img/services-img-4.svg");
+            }
+        }
+    }
+
 }

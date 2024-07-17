@@ -141,6 +141,8 @@
             margin-bottom: 32px;
             max-width: 335px;
         }
+    }
+    .delivery, .services {
         .card {
             max-width: 335px;
             
@@ -151,10 +153,21 @@
             .btn-row {
                 gap: 12px !important;
 
-                a {
+                a:not(.services .card a){
                     padding: 14px 10px !important;
                 }
             } 
+        }
+    }
+
+    .services {
+        margin-top: 60px;
+        .container-fluid {
+            padding-top: 54px;
+            padding-bottom: 59px;
+            .template-title {
+                margin-bottom: 36px;
+            }
         }
     }
 }
