@@ -74,16 +74,25 @@ h6 {
     line-height: 22.41px;
 }
 
-input {
+input, textarea {
     width: 100%;
     padding: 19px 0 18px 20px;
-    color: #CBCBCB;
+    color: #000;
     background-color: #ffffff;
     border: none;
     border-radius: 10px;
-    font-size: 15px;
     line-height: 18.9px;
-    font-weight: 400;
+
+    &::placeholder {
+        color: #CBCBCB;
+        font-size: 15px;
+        line-height: 18.9px;
+        font-weight: 400;
+    }
+}
+
+textarea {
+    resize: none;
 }
 
 input[type="checkbox"], input[type="radio"] {
@@ -182,10 +191,10 @@ input[type="radio"]:checked + label::before {
     width: 100%;
     max-width: 293px;
     display: flex;
-    
     position: relative;
     
     .arrow {
+        content: "";
         width: 27px;
         height: 27px;
         position: absolute;

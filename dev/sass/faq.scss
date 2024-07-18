@@ -51,7 +51,7 @@
 
                     .accordion-button.spin {
                         &::after {
-                            transform: rotate(90deg);
+                            transform: rotate(-90deg);
                             background-image: url("assets/img/arrow-circle-left.svg");
                         }
                     }
@@ -77,6 +77,44 @@
                     margin-bottom: 21px;
                     
                   }
+            }
+
+            form {
+                
+                padding: 38px 40px;
+                background: $secondary-bg-color;
+                border: none;
+                border-radius: 20px;
+                box-shadow: 5px 15px 40px 0px rgb(4 7 23 / 32%);
+                max-height: 553px;
+                
+                h3 {
+                    margin-bottom: 8px;
+                    width: 310px;
+                }
+
+                p {
+                    font-size: 17px;
+                    line-height: 21.42px;
+                    font-weight: 300;
+                    margin-bottom: 23px;
+                }
+
+                .inputs-wrap {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 14px;
+                    border: none;
+                    margin-bottom: 26px;
+
+                    #questions {
+                        max-height: 70px;
+                    }
+                }
+
+                .btn-arrow {
+                    max-width: inherit;
+                }
             }
         }
     }
