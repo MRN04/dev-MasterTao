@@ -114,3 +114,20 @@ const swiperTemplate = new Swiper('.delivery-swiper, .services-swiper', {
     }
   }
 });
+
+var accBtn = document.getElementsByClassName("accordion-button");
+var i;
+
+for (i = 0; i < accBtn.length; i++) {
+  accBtn[i].addEventListener("click", function() {
+    this.closest(".accordion-item").classList.toggle("active")
+    this.classList.toggle("spin")
+    var panel = this.nextElementSibling;
+    if (panel.style.maxHeight) {
+      panel.style.maxHeight = null;
+    } else {
+      panel.style.maxHeight = panel.scrollHeight + "px";
+    }
+    panel.classList.toggle("show")
+  });
+}

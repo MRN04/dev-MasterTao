@@ -1,0 +1,83 @@
+.faq {
+    margin-top: 50px;
+    .container {
+        max-width: 1180px;
+
+        .template-title {
+            margin-bottom: 49px;
+        }
+
+        .content {
+            display: flex;
+            gap: 34px;
+            .accordion {
+                max-width: 716px;
+                display: flex;
+                flex-direction: column;
+                gap: 16px;
+
+                .accordion-item {
+                    background-color: transparent;
+                    overflow: hidden;
+                    width: 100%;
+                    border: 1px solid #3A444E;
+                    border-radius: 10px;
+                    outline: none;
+                    transition: 0.2s;
+                    position: relative;
+                    
+                    .accordion-button {
+                        width: 100%;
+                        text-align: left;
+                        background: transparent;
+                        border: none;
+                        font-size: 18px;
+                        font-weight: 700;
+                        line-height: 22.41px;
+                        padding: 21px 34px;
+                        cursor: pointer;
+                    
+                        &::after {
+                            content: "";
+                            position: absolute;
+                            width: 27px;
+                            height: 27px;
+                            background: url("assets/img/white-arrow-circle-left.svg") center/contain no-repeat;
+                            top: 18px;
+                            right: 19px;
+                            transition: .2s;
+                        }
+                    }
+
+                    .accordion-button.spin {
+                        &::after {
+                            transform: rotate(90deg);
+                            background-image: url("assets/img/arrow-circle-left.svg");
+                        }
+                    }
+                }
+
+                .active {
+                    background-color: #fff;
+
+                    .accordion-button, .panel p {
+                        color: $primary-bg-color;
+                    }
+                }
+
+                  .panel {
+                    font-weight: 300;
+                    max-height: 0;
+                    overflow: hidden;
+                    transition: max-height 0.2s ease-out;
+                    padding: 0 34px;
+                  }
+
+                  .show {
+                    margin-bottom: 21px;
+                    
+                  }
+            }
+        }
+    }
+}
