@@ -196,6 +196,21 @@
             }
         }
     }
+
+    .faq {
+        margin-top: 34px;
+        .container {
+            .template-title {
+                margin-bottom: 27px;
+            }
+
+            .content {
+                flex-direction: column;
+                gap: 28px;
+                align-items: center;
+            }
+        }
+    }
 }
 
 

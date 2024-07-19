@@ -59,4 +59,20 @@
         margin: 0;
         border-radius: 0;
     }
+
+    .faq {
+        .container .content form {
+            max-width: 335px;
+            padding: 38px 20px;
+            max-height: inherit;
+
+            h3 {
+                width: inherit;
+                text-align: center;
+            }
+            p {
+                text-align: center;
+            }
+        }
+    }
 }

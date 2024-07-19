@@ -35,6 +35,7 @@
                         font-weight: 700;
                         line-height: 22.41px;
                         padding: 21px 34px;
+                        padding-right: 60px;
                         cursor: pointer;
                     
                         &::after {
@@ -80,7 +81,7 @@
             }
 
             form {
-                
+                max-width: 390px;
                 padding: 38px 40px;
                 background: $secondary-bg-color;
                 border: none;
