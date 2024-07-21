@@ -1,15 +1,16 @@
 footer{
     margin: 0 auto;
     margin-top: 56px;
-    max-width: 1140px;
-    padding-top: 35px;
-    border-top: 2px solid $button-color;
+    max-width: 1180px;
+    padding: 0 20px;
+    margin-bottom: 59px;
 
     .row {
         display: flex;
         justify-content: space-between;
         padding-right: 81px;
-        margin-bottom: 59px;
+        border-top: 2px solid $button-color;
+        padding-top: 35px;
 
         .col {            
             max-width: 264px;
