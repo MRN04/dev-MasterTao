@@ -1,7 +1,61 @@
 footer{
-    height: 100px;
-    background-color: $primary-bg-color;
-    margin-top: auto;
+    margin: 0 auto;
+    margin-top: 56px;
+    max-width: 1140px;
+    padding-top: 35px;
+    border-top: 2px solid $button-color;
+
+    .row {
+        display: flex;
+        justify-content: space-between;
+        padding-right: 81px;
+        margin-bottom: 59px;
+
+        .col {            
+            max-width: 264px;
+
+            h5 {
+                margin-bottom: 14px;
+            }
+
+            ul {
+                display: flex;
+                flex-direction: column;
+                gap: 10px;
+                padding: 0 ;
+
+                li {
+                    a {
+                        font-size: 16px;
+                        line-height: 25.68px;
+                        text-decoration: underline;
+                        color: #85899C;
+                    }
+
+                    &::marker {
+                        font-size: 0;
+                    }
+                }
+            }
+
+            &:first-child {
+                .logo {
+                    margin-bottom: 28px;
+
+                }
+
+                p {
+                    font-size: 14px;
+                    line-height: 25px;
+                }
+                .social-medias {
+                    margin-top: 20px;
+                    display: flex;
+                    gap: 8px;
+                }
+            }
+        }
+    }
 }
 
  
