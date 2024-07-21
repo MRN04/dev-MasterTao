@@ -211,6 +211,49 @@
             }
         }
     }
+
+    .cooperation {
+        margin-top: 60px;
+
+        .template-title {
+            padding-top: 55px;
+            margin-bottom: 43px;
+            p {
+                font-size: 16px;
+                line-height: 19.92px;
+            }
+        }
+
+        .content {
+            gap: 43px;
+
+            .row {
+                flex-direction: column;
+                gap: 30px;
+
+                .txt {
+                    order: 1;
+                    gap: 20px;
+                    align-items: center;
+
+                    p {
+                        font-size: 16px;
+                        line-height: 23.92px;
+                    }
+
+                    .btn-arrow {
+                        max-width: 335px;
+                    }
+                }
+
+                img {
+                    width: 100%;
+                    max-width: 335px;
+                    order: 0;
+                }
+            }
+        }
+    }
 }
 
 

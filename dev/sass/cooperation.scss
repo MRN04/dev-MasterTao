@@ -1,0 +1,94 @@
+img {
+    --img-margin: 30px;
+    &.alignleft,
+    &.alignright {
+        max-width: calc(50% - var(--img-margin));
+    }
+
+    &.alignleft {
+        margin: 0 var(--img-margin) 25px 0;
+        float: left;
+    }
+
+    &.alignright {
+        margin: 0 0 25px var(--img-margin);
+        float: right;
+    }
+
+    &.aligncenter {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: var(--img-margin);
+        max-width: 100%;
+    }
+}
+
+.cooperation {
+    margin-top: 100px;
+
+    .template-title {
+        padding-top: 90px;
+        margin-bottom: 86px;
+        p {
+            font-size: 24px;
+            line-height: 29.88px;
+            font-weight: 300;
+            text-transform: none;
+            margin-top: 5px;
+            margin-bottom: 5px;
+        }
+        &::after {
+            background-color: $icons-color;
+        }
+    }
+
+    .content {
+        display: flex;
+        flex-direction: column;
+        gap: 47px;
+        max-width: 1180px;
+        padding: 0 20px;
+        padding-bottom: 100px;
+        margin: 0 auto;
+
+        .row {
+            display: flex;
+            gap: 50px;
+            align-items: center;
+
+            .txt {
+                display: flex;
+                flex-direction: column;
+                gap: 28px;
+
+                p {
+                    font-size: 17px;
+                    font-weight: 300;
+                    line-height: 26.61px;
+
+                    &::before {
+                        content: "";
+                        width: 5px;
+                        height: 5px;
+                        background: #FFFFFF;
+                        border-radius: 50%;
+                        display: inline-block;
+                        margin-right: 6px;
+                        margin-bottom: 3px;
+                    }           
+                }
+
+                .btn-arrow {
+                    margin-top: 15px;
+                    max-width: 243px;
+                }
+            }
+
+            img {
+                box-shadow: 5px 15px 40px 0px #050a2952;
+                max-width: 555px;
+            }
+        }
+    }
+}
