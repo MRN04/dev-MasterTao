@@ -12,10 +12,11 @@
     }
 
     .content-section {
+        margin-top: inherit;
         .first-screen {
             .swiper {
                 border-radius: 0;
-                height: calc(100vh - 109px);
+                height: calc(100vh - 99px);
                 .swiper-slide {
                     border-radius: 0;
 
@@ -126,7 +127,7 @@
             padding-bottom: 45px;
         }
         .swiper-advantages { 
-            padding-bottom: 100px;
+            padding-bottom: 60px;
 
             .swiper-pagination {
                 bottom: 60px;

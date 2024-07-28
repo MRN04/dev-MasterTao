@@ -4,20 +4,21 @@
     }
 
     .advantages {
-        .swiper {
-            max-width: 1142px;
-            margin: 0 auto;
-        }
-
-        .swiper-wrapper {
-            flex-wrap: wrap;
-            row-gap: 26px;
-            column-gap: 30px;
-            justify-content: center;
-
-            .swiper-slide {
-                width: calc(25% - 23px) !important;
-                min-width: 150px;
+        .container-fluid {
+            .swiper.swiper-advantages {
+                max-width: 1142px;
+                margin: 0 auto;
+            
+                .swiper-wrapper {
+                    flex-wrap: wrap;
+                    row-gap: 26px;
+                    column-gap: 30px;
+                    justify-content: center;
+    
+                    .swiper-slide {
+                        min-width: 263px;
+                    }
+                }
             }
         }
     }
